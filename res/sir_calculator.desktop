@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=SIR Calculator
+Comment=SIR model calculator
+TryExec=sir_calculator
+Exec=sir_calculator
+Icon=sir_calculator
+Categories=Utility;

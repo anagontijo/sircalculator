@@ -1,0 +1,792 @@
+Package: bird2
+Architecture: i386
+Version: 2.0.7-2~ubuntu18.04.1
+Priority: optional
+Section: universe/net
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Ondřej Surý <ondrej@debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1085
+Pre-Depends: init-system-helpers (>= 1.56~)
+Depends: adduser, lsb-base, ucf, libc6 (>= 2.27), libreadline7 (>= 6.0), libssh-gcrypt-4 (>= 0.6.1), libtinfo5 (>= 6)
+Suggests: bird2-doc
+Conflicts: bird
+Filename: pool/universe/b/bird2/bird2_2.0.7-2~ubuntu18.04.1_i386.deb
+Size: 394524
+MD5sum: 977f968d251b8f068a590f7b63aa085d
+SHA1: b59288740d289ac7c2b92f211c9c4e9b0ea19b59
+SHA256: d903255ae71b72e1ba884333a28bd6332307d289c6507397dc297fd33e2dd284
+Homepage: https://bird.network.cz/
+Description: Internet Routing Daemon
+Description-md5: 874644189b6bd30d36505beb812c9640
+
+Package: bird2-doc
+Architecture: all
+Version: 2.0.7-2~ubuntu18.04.1
+Priority: optional
+Section: universe/doc
+Source: bird2
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Ondřej Surý <ondrej@debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1426
+Filename: pool/universe/b/bird2/bird2-doc_2.0.7-2~ubuntu18.04.1_all.deb
+Size: 999724
+MD5sum: 920830413d21fff0fc6808f51b2dc237
+SHA1: bb25f1b20086d61271f2a8dd86f687244af838e3
+SHA256: 50b08d946751d790e3b8c857308dd5e5cd9792c1808115e4c10b76074031e718
+Homepage: https://bird.network.cz/
+Description: Internet Routing Daemon - documentation
+Description-md5: 1ced61660e9937b21315d53a620aa063
+
+Package: cockpit
+Architecture: all
+Version: 215-1~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: universe/admin
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 62
+Depends: cockpit-bridge (>= 215-1~ubuntu18.04.1), cockpit-ws (>= 215-1~ubuntu18.04.1), cockpit-system (>= 215-1~ubuntu18.04.1)
+Recommends: cockpit-storaged (>= 215-1~ubuntu18.04.1), cockpit-networkmanager (>= 215-1~ubuntu18.04.1), cockpit-dashboard (>= 215-1~ubuntu18.04.1), cockpit-packagekit (>= 215-1~ubuntu18.04.1)
+Suggests: cockpit-doc (>= 215-1~ubuntu18.04.1), cockpit-pcp (>= 215-1~ubuntu18.04.1), cockpit-machines (>= 215-1~ubuntu18.04.1), xdg-utils
+Filename: pool/universe/c/cockpit/cockpit_215-1~ubuntu18.04.1_all.deb
+Size: 17988
+MD5sum: 5a64e843ff87e509ecea6c12b768e2a9
+SHA1: 117a8db27c3086bcf9aa40285fb03a8f1334f9e4
+SHA256: 7e098801cf372fb1a973d1d33abb9480891a50e2f716da54dc7f3390994fc05f
+Homepage: https://cockpit-project.org/
+Description: Web Console for Linux servers
+Description-md5: 24b0aa0c07779dcba10e15ca9244d9e9
+
+Package: cockpit-bridge
+Architecture: i386
+Version: 215-1~ubuntu18.04.1
+Priority: optional
+Section: universe/admin
+Source: cockpit
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1117
+Provides: cockpit-ssh
+Depends: libc6 (>= 2.27), libglib2.0-0 (>= 2.39.4), libjson-glib-1.0-0 (>= 1.2.0), libpolkit-agent-1-0 (>= 0.105), libpolkit-gobject-1-0 (>= 0.104), libssh-4 (>= 0.8.0~20170825.94fa1e38), libsystemd0 (>= 235), glib-networking
+Breaks: cockpit-dashboard (<< 170.x), cockpit-ws (<< 181.x)
+Replaces: cockpit-dashboard (<< 170.x), cockpit-ws (<< 181.x)
+Filename: pool/universe/c/cockpit/cockpit-bridge_215-1~ubuntu18.04.1_i386.deb
+Size: 580968
+MD5sum: f85b82184942dc781d52978acac6b7c6
+SHA1: 5019ca30ebc4718a2a9784f9ad95ed5942cdbdac
+SHA256: a98a047646c748e71837f18a522f1821957beb61671629daaaa0b3be8e441e74
+Homepage: https://cockpit-project.org/
+Description: Cockpit bridge server-side component
+Description-md5: 34419f40043aa83e9a0fb5968fe56ce7
+
+Package: cockpit-dashboard
+Architecture: all
+Version: 215-1~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: universe/admin
+Source: cockpit
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 227
+Depends: cockpit-bridge (>= 170.x), cockpit-ws (>= 215-1~ubuntu18.04.1), cockpit-ws (<< 215-1~ubuntu18.04.1.1~)
+Replaces: cockpit-system (<< 128), cockpit-ws (<< 128)
+Filename: pool/universe/c/cockpit/cockpit-dashboard_215-1~ubuntu18.04.1_all.deb
+Size: 194972
+MD5sum: ddb83f86265d81ba2b57e33182b8db0f
+SHA1: 03bd9f481b384bb155cdb525acb787ba5864e0ca
+SHA256: feb4975225271809afc16f2c47c3dcf16e0629dfb04cbfc33db07190d85a557e
+Homepage: https://cockpit-project.org/
+Description: Cockpit remote servers and dashboard
+Description-md5: 1b1adf0b10d4d95da33a41c0d668cfd1
+
+Package: cockpit-doc
+Architecture: all
+Version: 215-1~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: universe/doc
+Source: cockpit
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 657
+Filename: pool/universe/c/cockpit/cockpit-doc_215-1~ubuntu18.04.1_all.deb
+Size: 250316
+MD5sum: 09d526beee0fc4690f386ed9340e89fb
+SHA1: a7ab22abc4bb3e3fdffc2e6838b3c46d6b426d88
+SHA256: b9c471bde9d89f002f1d1a3700e8e3f9038058679c9ab793577de361b0932469
+Homepage: https://cockpit-project.org/
+Description: Cockpit deployment and developer guide
+Description-md5: 917dc8f7798407683627da6ebb139a47
+
+Package: cockpit-docker
+Architecture: all
+Version: 215-1~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: universe/admin
+Source: cockpit
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 418
+Depends: python3, cockpit-bridge (>= 186)
+Recommends: docker.io (>= 1.3.0) | docker-engine (>= 1.3.0) | docker-ce (>= 1.3.0)
+Filename: pool/universe/c/cockpit/cockpit-docker_215-1~ubuntu18.04.1_all.deb
+Size: 388408
+MD5sum: cd67cebdf69dcc76aea44a5f359a57b6
+SHA1: aba74b0b3db122503ca42261eddbc53f4b81d5fd
+SHA256: 3ee2da52a9b1cda68bf7c8f677045cd8cf6afa2b5f97f5d414ecff0304a49580
+Homepage: https://cockpit-project.org/
+Description: Cockpit user interface for Docker containers
+Description-md5: c02e70ed63df0326f1a1b12deeb24144
+
+Package: cockpit-machines
+Architecture: all
+Version: 215-1~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: universe/admin
+Source: cockpit
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 732
+Depends: libvirt-daemon-system, libvirt-clients | libvirt-bin
+Recommends: virtinst, libvirt-dbus, python3-gi, gir1.2-libosinfo-1.0, qemu-block-extra
+Filename: pool/universe/c/cockpit/cockpit-machines_215-1~ubuntu18.04.1_all.deb
+Size: 713264
+MD5sum: a8e7e6dcd16d5e7c055b6c830abb3d76
+SHA1: aed7c6741ecd3aae92cbf31e6ddb33e0e97ffd0c
+SHA256: ec19d845b57f6ffd1e10c3bb620a0267b42d7a8d4db70a06e1dd81c30826eca6
+Homepage: https://cockpit-project.org/
+Description: Cockpit user interface for virtual machines
+Description-md5: a902f6feddb06225624681441d26bc7d
+
+Package: cockpit-networkmanager
+Architecture: all
+Version: 215-1~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: universe/admin
+Source: cockpit
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 413
+Depends: cockpit-bridge (>= 186), network-manager (>= 1.6)
+Filename: pool/universe/c/cockpit/cockpit-networkmanager_215-1~ubuntu18.04.1_all.deb
+Size: 384984
+MD5sum: ab874b228778c6e0e107dee5c635ed74
+SHA1: e0da80770dc5b57889f29437d98cca594ce12747
+SHA256: 9fe60936671458d159701e224cd91a731187d44a008e27b2caa88f27e611788b
+Homepage: https://cockpit-project.org/
+Description: Cockpit user interface for networking
+Description-md5: 3ec1a60ecda81a24c8267c56cf7a9a3f
+
+Package: cockpit-packagekit
+Architecture: all
+Version: 215-1~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: universe/admin
+Source: cockpit
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 417
+Depends: cockpit-bridge (>= 186), packagekit
+Filename: pool/universe/c/cockpit/cockpit-packagekit_215-1~ubuntu18.04.1_all.deb
+Size: 380128
+MD5sum: 2ed255f8182a74f589d3bd46431ed5b8
+SHA1: fa56e9c0f640105e326598d7a7608ae553c7b73e
+SHA256: e350bc3ffe26d50190dff7d826708b92ed928fd07c08958667cb6f11bf0ed57b
+Homepage: https://cockpit-project.org/
+Description: Cockpit user interface for packages
+Description-md5: 01ecbad973ab31bb91eb03019d4352aa
+
+Package: cockpit-pcp
+Architecture: i386
+Version: 215-1~ubuntu18.04.1
+Priority: optional
+Section: universe/admin
+Source: cockpit
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 240
+Depends: libc6 (>= 2.11), libglib2.0-0 (>= 2.37.3), libjson-glib-1.0-0 (>= 0.16.0), libpcp3, libsystemd0 (>= 235), cockpit-bridge (>= 186), pcp
+Filename: pool/universe/c/cockpit/cockpit-pcp_215-1~ubuntu18.04.1_i386.deb
+Size: 77264
+MD5sum: f1adb18ff70589ab19636e635f15901f
+SHA1: b5347e9888a2f6372af9c2c3e2771741a857c061
+SHA256: 0110c26a853c43378993e722d1937a85f7b4ef9918fb5666084fb7c65813a732
+Homepage: https://cockpit-project.org/
+Description: Cockpit PCP integration
+Description-md5: 2bcebebdc8b56e2cd8c2ba8755912a8f
+
+Package: cockpit-storaged
+Architecture: all
+Version: 215-1~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: universe/admin
+Source: cockpit
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 596
+Depends: udisks2 (>= 2.7), libblockdev-mdraid2, cockpit-bridge (>= 186), python3, python3-dbus
+Filename: pool/universe/c/cockpit/cockpit-storaged_215-1~ubuntu18.04.1_all.deb
+Size: 570824
+MD5sum: 9750c38330baadb987f17a5de1deca29
+SHA1: 2361c209a06ee89ee1a7752808732d0f7fe43579
+SHA256: a3ae1e94eb3a55bc55373c5a7a90e62b46ed9f9e9663d55e461fd456c4799ca7
+Homepage: https://cockpit-project.org/
+Description: Cockpit user interface for storage
+Description-md5: f6107ca2b49a2b554a0abcd9b73419c5
+
+Package: cockpit-system
+Architecture: all
+Version: 215-1~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: universe/admin
+Source: cockpit
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1993
+Provides: cockpit-shell, cockpit-systemd, cockpit-tuned, cockpit-users
+Depends: cockpit-bridge (>= 186), libpwquality-tools, openssl
+Recommends: policykit-1
+Conflicts: cockpit-shell
+Replaces: cockpit-shell
+Filename: pool/universe/c/cockpit/cockpit-system_215-1~ubuntu18.04.1_all.deb
+Size: 1888432
+MD5sum: dffe0bb649296e2c6cd3114b2da44077
+SHA1: 346150f72af0e53716cf8fdc60f5bb02c50a99e2
+SHA256: b3f70011379dd66d913a5273b3a324498c2338442ec242e31a3d97b5012db22a
+Homepage: https://cockpit-project.org/
+Description: Cockpit admin interface for a system
+Description-md5: 305239ce7fcb5c6043156a1e54c69f73
+
+Package: cockpit-tests
+Architecture: i386
+Version: 215-1~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: universe/admin
+Source: cockpit
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 451
+Provides: cockpit-test-assets
+Depends: libc6 (>= 2.4), libpam0g (>= 0.99.7.1), cockpit-system (>= 215-1~ubuntu18.04.1), openssh-client
+Conflicts: cockpit-test-assets
+Replaces: cockpit-test-assets
+Filename: pool/universe/c/cockpit/cockpit-tests_215-1~ubuntu18.04.1_i386.deb
+Size: 390708
+MD5sum: 4071ae4e303e764e393cbb552365530d
+SHA1: bdf5a29d16b99a38ad8f2fd5a04e0442209f3071
+SHA256: 3656e03a89512b39a1d4e0aa893f8d80dd677554db322fbce99bbc08a9afbbcc
+Homepage: https://cockpit-project.org/
+Description: Tests for Cockpit
+Description-md5: 0b4ed46aa862cd96d493b081c605101e
+
+Package: cockpit-ws
+Architecture: i386
+Version: 215-1~ubuntu18.04.1
+Priority: optional
+Section: universe/admin
+Source: cockpit
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 2354
+Depends: libc6 (>= 2.17), libglib2.0-0 (>= 2.39.4), libgnutls30 (>= 3.5.6), libgssapi-krb5-2 (>= 1.14+dfsg), libjson-glib-1.0-0 (>= 0.16.0), libkrb5-3 (>= 1.6.dfsg.2), libpam0g (>= 0.99.7.1), libsystemd0 (>= 237), glib-networking, adduser, openssl, systemd (>= 235)
+Suggests: sssd-dbus
+Filename: pool/universe/c/cockpit/cockpit-ws_215-1~ubuntu18.04.1_i386.deb
+Size: 1311884
+MD5sum: 0ed4762d877f0f58fc2553d75312e011
+SHA1: b51b97149c8f5d75631ca7d53f83a76559b92ab7
+SHA256: b77ba43eb17e866d3303498f444e10e3b4dcd66caae2ba2be4a3ca9d2ac4592e
+Homepage: https://cockpit-project.org/
+Description: Cockpit Web Service
+Description-md5: f492a869e15f8c92004032f384bce124
+
+Package: dh-systemd
+Architecture: all
+Version: 12.1.1ubuntu1~ubuntu18.04.1
+Multi-Arch: foreign
+Priority: extra
+Section: universe/admin
+Source: debhelper
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debhelper Maintainers <debhelper@packages.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 129
+Depends: debhelper (>= 9.20160709)
+Filename: pool/universe/d/debhelper/dh-systemd_12.1.1ubuntu1~ubuntu18.04.1_all.deb
+Size: 2676
+MD5sum: 6461fac46ac3da43e04dfc04dbb9cdc6
+SHA1: 16ea762189a6a929293ec5f6bda984f49ca24b12
+SHA256: a6e03bde9e90db385ad99f371af3387d56abcd7d52de4e4ea48483a33e970f13
+Description: debhelper add-on to handle systemd unit files - transitional package
+Description-md5: 67a68071a0cbbaa9df2bcd81ec5a29b1
+
+Package: elixir
+Architecture: i386
+Version: 1.9.1.dfsg-1~ubuntu18.04.1
+Priority: optional
+Section: universe/interpreters
+Source: elixir-lang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Evgeny Golyshev <eugulixes@gmail.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 5923
+Depends: erlang-base:any (>= 1:20) | erlang-base-hipe:any (>= 1:20)
+Filename: pool/universe/e/elixir-lang/elixir_1.9.1.dfsg-1~ubuntu18.04.1_i386.deb
+Size: 3514264
+MD5sum: 5148326d912dc8075fa1df711f396648
+SHA1: 6ae3ba32d96995385c994842cc96fe1489f1a966
+SHA256: 831ddc7d9968a17ce22dd801ea0779b21d237ad5627c25e8cc8357083f85b25a
+Homepage: http://elixir-lang.org/
+Description: functional meta-programming aware language
+Description-md5: 572fe6b3095250d25aa22e376bc0e13e
+
+Package: erlang
+Architecture: all
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Priority: optional
+Section: universe/interpreters
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 53
+Depends: erlang-base:any | erlang-base-hipe:any, erlang-dev:any, erlang-asn1:any, erlang-common-test:any, erlang-crypto:any, erlang-debugger:any, erlang-dialyzer:any, erlang-diameter:any, erlang-edoc:any, erlang-eldap:any, erlang-erl-docgen:any, erlang-et:any, erlang-eunit:any, erlang-ftp:any, erlang-inets:any, erlang-megaco:any, erlang-mnesia:any, erlang-observer:any, erlang-odbc:any, erlang-os-mon:any, erlang-parsetools:any, erlang-public-key:any, erlang-reltool:any, erlang-runtime-tools:any, erlang-snmp:any, erlang-ssh:any, erlang-ssl:any, erlang-syntax-tools:any, erlang-tftp:any, erlang-tools:any, erlang-wx:any, erlang-xmerl:any
+Recommends: erlang-jinterface, erlang-mode, erlang-src, erlang-examples
+Suggests: erlang-manpages, erlang-doc
+Filename: pool/universe/e/erlang/erlang_22.0.7+dfsg-1build1~ubuntu18.04.1_all.deb
+Size: 13024
+MD5sum: 5fe06fbc9af5c5f756d03328f46164c2
+SHA1: a777791ecf98fe1a994b42ca064ad9f40555eeb0
+SHA256: 81b4cb07c928799dfb7c3ee0bdca126a091d16e2265431ed03cd2c4eb519d665
+Homepage: http://www.erlang.org/
+Description: Concurrent, real-time, distributed functional language
+Description-md5: 444ffdeb0f4a95a7e36f20d18ac794cb
+
+Package: erlang-base-hipe
+Architecture: i386
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: universe/interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 16721
+Provides: erlang-abi-17.0
+Depends: procps, adduser, libc6 (>= 2.15), libsystemd0, libtinfo5 (>= 6), zlib1g (>= 1:1.2.8)
+Recommends: libsctp1 (>= 1.0.17+dfsg), erlang-crypto (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-syntax-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang, erlang-manpages, erlang-doc
+Conflicts: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base, erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-doc-html (<< 1:13.b.4), erlang-manpages (<= 1:11.b.1-2)
+Breaks: rabbitmq-server (<< 3.7.7)
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base, erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-doc-html (<< 1:13.b.4), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-typer (<< 1:20.0+dfsg), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/universe/e/erlang/erlang-base-hipe_22.0.7+dfsg-1build1~ubuntu18.04.1_i386.deb
+Size: 9823708
+MD5sum: 9dc328d13a7dfcbcd5f7ccfe0e47326a
+SHA1: e58ab967c7c81a4e1bcca5d4efad8dde5f02d725
+SHA256: fa6aa31145b76ae599cafcd61c48a5b986d9b04e38388aff85f186817a07e7ef
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP HiPE enabled virtual machine and base applications
+Description-md5: f284d6d86968208e4f53d14fca4279b8
+
+Package: erlang-common-test
+Architecture: i386
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: universe/interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1540
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1) | erlang-base-hipe (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-crypto (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-debugger (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-ftp (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-inets (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-observer (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-runtime-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-snmp (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-ssh (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-syntax-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-xmerl (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), libjs-jquery, libjs-jquery-tablesorter, libc6 (>= 2.4)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/universe/e/erlang/erlang-common-test_22.0.7+dfsg-1build1~ubuntu18.04.1_i386.deb
+Size: 1039404
+MD5sum: 3d741977b372f23dad24149226f23789
+SHA1: 6275281e1a196485263989f797ca521d1fd696ae
+SHA256: af39950846dc77cb638e533a0bf43b14465a5399b7731442dd58396b3f7835a3
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP application for automated testing
+Description-md5: 7b279934204d2fda3ee05f2ba5e002bb
+
+Package: erlang-debugger
+Architecture: i386
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: universe/interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 559
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1) | erlang-base-hipe (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-wx (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/universe/e/erlang/erlang-debugger_22.0.7+dfsg-1build1~ubuntu18.04.1_i386.deb
+Size: 377660
+MD5sum: ad3a12fc24856a1655402242e16e25ec
+SHA1: 7a3206c11221f3d94c75c80ad04ecff34c3c29d1
+SHA256: a84e7aa0903bc287d2d4893ac78649d9163eeafddf38ffe8eefb77eb979a1d8f
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP application for debugging and testing
+Description-md5: f2a130c9024aae5b814aecc511de1716
+
+Package: erlang-dialyzer
+Architecture: i386
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: universe/interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1021
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1) | erlang-base-hipe (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-syntax-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), libc6 (>= 2.4)
+Suggests: erlang-wx (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/universe/e/erlang/erlang-dialyzer_22.0.7+dfsg-1build1~ubuntu18.04.1_i386.deb
+Size: 674764
+MD5sum: 813c2752bb745bfa4a1d6e96a1e857d0
+SHA1: 8aac5724ddbe57303905c7a324aff823c7fc18b1
+SHA256: c6bf148612b6810ae53ff55f2ab8793070683517a465e3207bf4e236a4f1307f
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP discrepancy analyzer application
+Description-md5: 64f3bbfb833c0a9582717bebe4d36557
+
+Package: erlang-et
+Architecture: i386
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: universe/interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 240
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1) | erlang-base-hipe (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-runtime-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-wx (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/universe/e/erlang/erlang-et_22.0.7+dfsg-1build1~ubuntu18.04.1_i386.deb
+Size: 144656
+MD5sum: 2e5a458c2df7f1cfeab70f96b45b8157
+SHA1: f5c9636e2190246baf0fb91c82680185f3d1e673
+SHA256: b1cc8222352d05875515492359c3789f402cb323a2a8341622b68bfffc4f574e
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP event tracer application
+Description-md5: 642600ae4ee7f6069393fa0af8f50037
+
+Package: erlang-jinterface
+Architecture: all
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Priority: optional
+Section: universe/interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 163
+Depends: default-jre-headless | java2-runtime-headless | java1-runtime-headless | java2-runtime | java1-runtime
+Suggests: erlang, erlang-manpages, erlang-doc
+Filename: pool/universe/e/erlang/erlang-jinterface_22.0.7+dfsg-1build1~ubuntu18.04.1_all.deb
+Size: 106000
+MD5sum: 52dc02cb8d8495c03a2585ef8a6fcf9c
+SHA1: b89018aa04010a5c2ee57af636efe415b55ec877
+SHA256: 5e05dde47934a0c3492efe2dc3572544c1a564df1d828d91cf57418a15d6456b
+Homepage: http://www.erlang.org/
+Description: Java communication tool to Erlang
+Description-md5: 6e3651f89f83062d26177557bb00ae3d
+
+Package: erlang-manpages
+Architecture: all
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Priority: optional
+Section: universe/interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1839
+Suggests: erlang, erlang-doc
+Filename: pool/universe/e/erlang/erlang-manpages_22.0.7+dfsg-1build1~ubuntu18.04.1_all.deb
+Size: 1598876
+MD5sum: fc828076411853d171ca4cb247251d79
+SHA1: 1465f40c53901bad152b62806074cbfe62af37f8
+SHA256: 346c38ba4a236a5d64ab3f58fca4549d7e825f9b81c7c0dfc1800b1d56ad9119
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP manual pages
+Description-md5: cdc7cc48bad4a582e48a14f54e037734
+
+Package: erlang-mode
+Architecture: all
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Priority: optional
+Section: universe/interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 531
+Depends: emacsen-common (>= 1.4.14)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang-base:any (<< 1:12.b.1-dfsg-2), erlang-base-hipe:any (<< 1:12.b.1-dfsg-2)
+Filename: pool/universe/e/erlang/erlang-mode_22.0.7+dfsg-1build1~ubuntu18.04.1_all.deb
+Size: 87816
+MD5sum: 30d2d55ba505e579814fb2626f034f04
+SHA1: 3f64e4161cda09f06866df0233b632f6346bf5e4
+SHA256: b4d3a6e42d8b95fe31b801368a8361cdf18e32065153f29231c65b7f5dd90103
+Homepage: http://www.erlang.org/
+Description: Erlang major editing mode for Emacs
+Description-md5: 458834bc6eb6df394adfd308669076f9
+
+Package: erlang-observer
+Architecture: i386
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: universe/interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1163
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1) | erlang-base-hipe (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-et (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-runtime-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-wx (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/universe/e/erlang/erlang-observer_22.0.7+dfsg-1build1~ubuntu18.04.1_i386.deb
+Size: 849936
+MD5sum: 60bec9ed9b937efab296983d68c5954c
+SHA1: 35fabc95bf3c5debaa6ab4ed6011246f39c7017d
+SHA256: 26099d1eb5894ba4ec0264415b4ec429f466969da3a5e1a21387c4e8129337a5
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP application for investigating distributed systems
+Description-md5: 562a137fe6357e7dc7f07faca76776a1
+
+Package: erlang-reltool
+Architecture: i386
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: universe/interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 472
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1) | erlang-base-hipe (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-tools (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-wx (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/universe/e/erlang/erlang-reltool_22.0.7+dfsg-1build1~ubuntu18.04.1_i386.deb
+Size: 325912
+MD5sum: abbec38925336b6e2df8a5acb506b832
+SHA1: 5288c74fe0a87ad76ac8cac71f637e577a209293
+SHA256: e1d8674718bcfd086f0d2a0f63bac9adddb0bef80f648bcb912dfe3845ad1ef5
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP release management tool
+Description-md5: c21e40c68ee2fb8795e6e8d59da14957
+
+Package: erlang-src
+Architecture: all
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Priority: optional
+Section: universe/interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 45866
+Depends: erlang-base:any (>= 1:22.0.7+dfsg-1build1~ubuntu18.04.1) | erlang-base-hipe:any (>= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base:any (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1.0) | erlang-base-hipe:any (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1.0)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang:any (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base:any (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe:any (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev:any (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-erl-docgen:any (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/universe/e/erlang/erlang-src_22.0.7+dfsg-1build1~ubuntu18.04.1_all.deb
+Size: 5314592
+MD5sum: f3b1daef83f3e004f11b0bbb87623884
+SHA1: 0ed66d933f95eaeee86ff0f8109efa250a35d61b
+SHA256: b2dda64b87bfa5be2fb23ead349311e8fd6ed1d082aa85a5da97b08a75ff4ffd
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP applications sources
+Description-md5: 6a6a52b3019a4fbd9d35a8cde25c0477
+
+Package: erlang-wx
+Architecture: i386
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Multi-Arch: allowed
+Priority: optional
+Section: universe/interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 6091
+Depends: erlang-base (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1) | erlang-base-hipe (= 1:22.0.7+dfsg-1build1~ubuntu18.04.1), libc6 (>= 2.4), libgcc1 (>= 1:3.0), libglu1-mesa | libglu1, libstdc++6 (>= 5.2), libwxbase3.0-0v5 (>= 3.0.4+dfsg), libwxgtk3.0-0v5 (>= 3.0.4+dfsg)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-base-hipe (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-dev (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-doc (>> 1:22.0.7+dfsg-999), erlang-doc (<< 1:22.0.7+dfsg), erlang-examples (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-src (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1), erlang-x11 (<< 1:22.0.7+dfsg-1build1~ubuntu18.04.1)
+Filename: pool/universe/e/erlang/erlang-wx_22.0.7+dfsg-1build1~ubuntu18.04.1_i386.deb
+Size: 2815252
+MD5sum: 2c6c90842810fc97a99faaed3c8e9a08
+SHA1: 6888fcf3507a10a5cbf991d1e45a8ccc447e30ec
+SHA256: 45c4d76b9d046b79df46a94d9a116730050cf1e0c812ee38391abd971304ecd2
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP bindings to wxWidgets
+Description-md5: 33737e962cd597aa89c0246f6ed16263
+
+Package: erlang-x11
+Architecture: all
+Version: 1:22.0.7+dfsg-1build1~ubuntu18.04.1
+Priority: optional
+Section: universe/interpreters
+Source: erlang
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 53
+Depends: erlang-base:any | erlang-base-hipe:any, erlang-nox, erlang-common-test:any, erlang-debugger:any, erlang-dialyzer:any, erlang-et:any, erlang-megaco:any, erlang-observer:any, erlang-reltool:any, erlang-wx:any
+Suggests: erlang, erlang-manpages, erlang-doc
+Filename: pool/universe/e/erlang/erlang-x11_22.0.7+dfsg-1build1~ubuntu18.04.1_all.deb
+Size: 5620
+MD5sum: 2db7eb9c73640fc02969c4d099a1a9f3
+SHA1: 07b8180df10f3feea8e861ae7028832f24bc7948
+SHA256: 766f665145a50edc1e49a10dacfa1251ae8915a8aa2c3ae357a7ae5ac0e30e9b
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP applications that require X Window System
+Description-md5: 243a50ebbcb77b74596e0d11eccda5c3
+
+Package: ibus-avro
+Architecture: all
+Version: 1.1-3~ubuntu18.04.1
+Priority: optional
+Section: universe/utils
+Origin: Ubuntu
+Maintainer: Gunnar Hjalmarsson <gunnarhj@ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 7815
+Depends: dconf-gsettings-backend | gsettings-backend, gjs, ibus, ibus-gtk, ibus-gtk3, ibus-clutter
+Conflicts: avro, ibus-avro-trusty
+Filename: pool/universe/i/ibus-avro/ibus-avro_1.1-3~ubuntu18.04.1_all.deb
+Size: 515224
+MD5sum: 7fcc191747317fcb86890c8a2628f1a6
+SHA1: 9fde594231f1da59dbfac3a497e8318cb4481dcd
+SHA256: ec38bc3a0755de8de3f2ca6e1ef5bb3c5e55b53ed5a431fb555fd7c4e0fb609f
+Homepage: https://github.com/sarim/ibus-avro
+Description: IBus engine for Avro Phonetic
+Description-md5: a4e45fc7e2170175e61ab6eef554298f
+
+Package: python-hvac
+Architecture: all
+Version: 0.5.0-0ubuntu1~ubuntu18.04.1
+Priority: optional
+Section: universe/python
+Source: hvac
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 102
+Depends: python-requests, python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Filename: pool/universe/h/hvac/python-hvac_0.5.0-0ubuntu1~ubuntu18.04.1_all.deb
+Size: 14468
+MD5sum: 1d6e2fb3fc52e407fccbc71523c72696
+SHA1: 8b04fcbad0385512772af686da3fa1b1866022f2
+SHA256: 8fa623991098ff5497e13ed2a94159be562935790f50faa3ff57558eee2d52cd
+Homepage: https://github.com/ianunruh/hvac
+Description: Python 2 client library for Hashicorp Vault
+Description-md5: d73f21e1c413b6aeb6fe1c1849673d2d
+
+Package: python3-hvac
+Architecture: all
+Version: 0.5.0-0ubuntu1~ubuntu18.04.1
+Priority: optional
+Section: universe/python
+Source: hvac
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 103
+Depends: python3-requests, python3:any (>= 3.3.2-2~)
+Filename: pool/universe/h/hvac/python3-hvac_0.5.0-0ubuntu1~ubuntu18.04.1_all.deb
+Size: 14840
+MD5sum: 9479bd72ea0e40cd6430512cc2403c5e
+SHA1: d97e63844bfbf601a9c5283a51ff6e57ccdf4adf
+SHA256: 2ded28dd813c4b526d2204a3f32a533a003a7a5f92c4eb3bc53fa5d87b9420d2
+Homepage: https://github.com/ianunruh/hvac
+Description: Python 3 client library for Hashicorp Vault
+Description-md5: 87f3d1dc985dc89bc5ba925dedb0e579
+
+Package: vaultlocker
+Architecture: all
+Version: 1.0.6-0ubuntu0.19.10.1~ubuntu18.04.1
+Priority: optional
+Section: universe/python
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 69
+Depends: python3-hvac, python3-pbr (>= 2.0.0), python3-tenacity, python3:any (>= 3.3.2-2~)
+Filename: pool/universe/v/vaultlocker/vaultlocker_1.0.6-0ubuntu0.19.10.1~ubuntu18.04.1_all.deb
+Size: 10316
+MD5sum: 433f19ade7d25a0f9b92e2d51dd7c049
+SHA1: da7a330172485705fdf97af233ac9c1c464b7a52
+SHA256: 06df1dd8374ae4c60c5d62c7a73449cd777e71d005c5ec08a8ddc4a2c1ae5d37
+Homepage: https://github.com/openstack-charmers/vaultlocker
+Description: Secure storage of dm-crypt keys in Hashicorp Vault
+Description-md5: e37e36f80e101bcee84aea29c108bcba
+

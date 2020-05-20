@@ -1,0 +1,30 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: qtcharts-opensource-src
+Source: https://download.qt.io/official_releases/qt/*/submodules/
+
+Files: *
+Copyright: 2016-2017 The Qt Company Ltd.
+License: GPL-3
+
+Files: debian/*
+Copyright: 2017 Simon Quigley <tsimonq2@ubuntu.com>
+           2017 Dmitry Shachnev <mitya57@debian.org>
+License: GPL-3
+
+Files: src/charts/boxplotchart/qhboxplotmodelmapper.*
+Copyright: 2016 Klarälvdalens Datakonsult AB (KDAB)
+License: GPL-3
+
+License: GPL-3
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License version 3 or (at
+ your option) any later version approved by the KDE Free Qt Foundation.
+ The licenses are as published by the Free Software Foundation.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ On Debian systems, the complete text of the GNU General Public
+ License version 3 can be found in /usr/share/common-licenses/GPL-3.

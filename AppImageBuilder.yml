@@ -1,0 +1,76 @@
+version: 1
+AppDir:
+  path: ./AppDir
+  app_info:
+    id: sir_calculator
+    name: SIR Calculator
+    icon: sir_calculator
+    version: latest
+    exec: AppRun
+    exec_args: $@
+  runtime:
+    env:
+      APPDIR_LIBRARY_PATH: $APPDIR/usr/lib/x86_64-linux-gnu
+  apt:
+    arch: amd64
+    sources:
+    - sourceline: deb http://br.archive.ubuntu.com/ubuntu/ bionic main restricted
+      key_url: ''
+    - sourceline: deb http://br.archive.ubuntu.com/ubuntu/ bionic-updates main restricted
+      key_url: ''
+    - sourceline: deb http://br.archive.ubuntu.com/ubuntu/ bionic universe
+      key_url: ''
+    - sourceline: deb http://br.archive.ubuntu.com/ubuntu/ bionic-updates universe
+      key_url: ''
+    - sourceline: deb http://br.archive.ubuntu.com/ubuntu/ bionic multiverse
+      key_url: ''
+    - sourceline: deb http://br.archive.ubuntu.com/ubuntu/ bionic-updates multiverse
+      key_url: ''
+    - sourceline: deb http://br.archive.ubuntu.com/ubuntu/ bionic-backports main restricted
+        universe multiverse
+      key_url: ''
+    - sourceline: deb http://security.ubuntu.com/ubuntu bionic-security main restricted
+      key_url: ''
+    - sourceline: deb http://security.ubuntu.com/ubuntu bionic-security universe
+      key_url: ''
+    - sourceline: deb http://security.ubuntu.com/ubuntu bionic-security multiverse
+      key_url: ''
+    - sourceline: deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic
+        stable
+      key_url: ''
+    - sourceline: deb http://ppa.launchpad.net/webupd8team/atom/ubuntu bionic main
+      key_url: ''
+    include: []
+    exclude: []
+  files:
+    exclude:
+    - usr/share/man
+    - usr/share/doc/*/README.*
+    - usr/share/doc/*/changelog.*
+    - usr/share/doc/*/NEWS.*
+    - usr/share/doc/*/TODO.*
+  test:
+    fedora:
+      image: appimagecrafters/tests-env:fedora-30
+      command: ./AppRun
+      use_host_x: true
+    debian:
+      image: appimagecrafters/tests-env:debian-stable
+      command: ./AppRun
+      use_host_x: true
+    arch:
+      image: appimagecrafters/tests-env:archlinux-latest
+      command: ./AppRun
+      use_host_x: true
+    centos:
+      image: appimagecrafters/tests-env:centos-7
+      command: ./AppRun
+      use_host_x: true
+    ubuntu:
+      image: appimagecrafters/tests-env:ubuntu-xenial
+      command: ./AppRun
+      use_host_x: true
+AppImage:
+  arch: x86_64
+  update-information: None
+  sign-key: None

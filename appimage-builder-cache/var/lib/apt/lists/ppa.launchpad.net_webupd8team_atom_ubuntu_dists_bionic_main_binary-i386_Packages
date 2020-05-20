@@ -1,0 +1,18 @@
+Package: atom
+Priority: optional
+Section: devel
+Installed-Size: 85340
+Maintainer: Alin Andrei <webupd8@gmail.com>
+Architecture: i386
+Version: 1.26.1-1~webupd8~0
+Recommends: lsb-release
+Suggests: libgnome-keyring0, gir1.2-gnomekeyring-1.0
+Depends: git, gconf2, gconf-service, libgtk2.0-0, libudev0 | libudev1, libgcrypt11 | libgcrypt20, libnotify4, libxtst6, libnss3, python, gvfs-bin, xdg-utils, libdbus-1-3, libcap2, libxkbfile1, libx11-6, libasound2, libsecret-1-0, gir1.2-secret-1
+Filename: pool/main/a/atom/atom_1.26.1-1~webupd8~0_i386.deb
+Size: 87360908
+MD5sum: ceff3fda6a06e30fd8a9466e15616820
+SHA1: 9cc85bcd961228b7a00dc24ae38b96d6d9d69bde
+SHA256: 3b6415f551aadb9ac54bfbf6dbc207e18c788c420ad12c57350f9b37b211b3b4
+Description: Atom text editor from GitHub
+Description-md5: f0bb98effcb2b07a853e0c6f22172ee5
+

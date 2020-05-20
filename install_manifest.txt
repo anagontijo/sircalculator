@@ -1,0 +1,3 @@
+/usr/bin/sir_calculator
+/usr/share/applications/sir_calculator.desktop
+/usr/share/icons/hicolor/216x216/apps/sir_calculator.png

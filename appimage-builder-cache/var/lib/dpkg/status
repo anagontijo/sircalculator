@@ -1,0 +1,570 @@
+Package: coreutils
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: coreutils
+Version: 8.28-1ubuntu1
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: dpkg
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: dpkg
+Version: 1.19.0.5ubuntu2.3
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: debconf
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: debconf
+Version: 1.5.66ubuntu1
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: multiarch-support
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: multiarch-support
+Version: 2.27-3ubuntu1
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libxcb1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libxcb1
+Version: 1.13-2~ubuntu18.04
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libx11-data
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libx11-data
+Version: 2:1.6.4-3ubuntu0.2
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libx11-6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libx11-6
+Version: 2:1.6.4-3ubuntu0.2
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libfreetype6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libfreetype6
+Version: 2.8.1-2ubuntu2
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: ucf
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: ucf
+Version: 3.0038
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: fontconfig-config
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: fontconfig-config
+Version: 2.12.6-0ubuntu2
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libfontconfig1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libfontconfig1
+Version: 2.12.6-0ubuntu2
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: fontconfig
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: fontconfig
+Version: 2.12.6-0ubuntu2
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libdrm-common
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libdrm-common
+Version: 2.4.99-1ubuntu1~18.04.2
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libdrm2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libdrm2
+Version: 2.4.99-1ubuntu1~18.04.2
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libglvnd0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libglvnd0
+Version: 1.0.0-2ubuntu2.3
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libgbm1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libgbm1
+Version: 19.2.8-0ubuntu0~18.04.3
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libglapi-mesa
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libglapi-mesa
+Version: 19.2.8-0ubuntu0~18.04.3
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libx11-xcb1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libx11-xcb1
+Version: 2:1.6.4-3ubuntu0.2
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libxcb-dri2-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libxcb-dri2-0
+Version: 1.13-2~ubuntu18.04
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libxcb-dri3-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libxcb-dri3-0
+Version: 1.13-2~ubuntu18.04
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libxcb-present0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libxcb-present0
+Version: 1.13-2~ubuntu18.04
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libxcb-xfixes0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libxcb-xfixes0
+Version: 1.13-2~ubuntu18.04
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libegl1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libegl1
+Version: 1.0.0-2ubuntu2.3
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libxcb-glx0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libxcb-glx0
+Version: 1.13-2~ubuntu18.04
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libdrm-amdgpu1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libdrm-amdgpu1
+Version: 2.4.99-1ubuntu1~18.04.2
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libdrm-intel1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libdrm-intel1
+Version: 2.4.99-1ubuntu1~18.04.2
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libdrm-nouveau2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libdrm-nouveau2
+Version: 2.4.99-1ubuntu1~18.04.2
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libdrm-radeon1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libdrm-radeon1
+Version: 2.4.99-1ubuntu1~18.04.2
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libgl1-mesa-dri
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libgl1-mesa-dri
+Version: 19.2.8-0ubuntu0~18.04.3
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libglx-mesa0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libglx-mesa0
+Version: 19.2.8-0ubuntu0~18.04.3
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libglx0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libglx0
+Version: 1.0.0-2ubuntu2.3
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libgl1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libgl1
+Version: 1.0.0-2ubuntu2.3
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: lsb-base
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: lsb-base
+Version: 9.20170808ubuntu1
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: x11-common
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: x11-common
+Version: 1:7.7+19ubuntu7.1
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libinput-bin
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libinput-bin
+Version: 1.10.4-1ubuntu0.18.04.1
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libxcb-shm0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libxcb-shm0
+Version: 1.13-2~ubuntu18.04
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libxcb-render0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libxcb-render0
+Version: 1.13-2~ubuntu18.04
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+
+Package: libxcb-shape0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 0
+Maintainer: Maintainer <maintainer@none.org>
+Architecture: all
+Source: libxcb-shape0
+Version: 1.13-2~ubuntu18.04
+Depends:
+Description: placeholder package
+ None
+Homepage: http://none.org/
+Original-Maintainer: Maintainer <maintainer@none.org>
+

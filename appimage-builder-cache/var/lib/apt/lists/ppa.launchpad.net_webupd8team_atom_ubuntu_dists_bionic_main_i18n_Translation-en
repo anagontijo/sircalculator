@@ -1,0 +1,11 @@
+Package: atom
+Description-md5: f0bb98effcb2b07a853e0c6f22172ee5
+Description-en: Atom text editor from GitHub
+ Atom is a hackable text editor for the 21st century, developed by GitHub.
+ .
+ Atom is open source and built on top of atom-shell.
+ .
+ Atom is designed to be customizable, but also usable without needing to edit a config file.
+ .
+ Atom is modern, approachable, and hackable to the core.
+
