@@ -3,7 +3,8 @@
 ######################################################################
 
 TEMPLATE = app
-TARGET = sircalculator
+TARGET = SIR_Calculator
+VERSION = 1.0.0.0
 INCLUDEPATH += .
 QT += core gui widgets charts
 

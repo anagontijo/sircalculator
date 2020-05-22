@@ -264,7 +264,7 @@
              <item>
               <widget class="QLabel" name="label">
                <property name="text">
-                <string>This app is part of an article I wrote about COVID-19, in this article I explain a little bit about this model in a high level perspective, that is, not in all the details but trying to relate it to reality. For developers, all the code for this app is in my github. I used Qt with C++ (with xtensor library) for this app.</string>
+                <string>This app is part of an article I wrote about COVID-19, in this article I explain a little bit about this model in a high level perspective, that is, not in all the details but trying to relate it to reality. For developers, all the code for this app is in my github. </string>
                </property>
                <property name="wordWrap">
                 <bool>true</bool>
