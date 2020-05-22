@@ -6,17 +6,22 @@
 
 class SIRMethod {
  public:
-  SIRMethod(int S, int I, int R, int num_of_intervals, int total_time, float beta, float nu, float lambda, float alpha);
+  SIRMethod(std::map<QString, float> args);
 
-  void set_initial_value(SIR_types::type type, float value);
+  void setInitialValue(SIR_types::type type, float value);
 
   void eval();
 
-private:
+  void setArgs(std::map<QString, float> args);
 
-  std::map<SIR_types::type, float> get_args(int index);
+  std::map<SIR_types::type, QVector<float>> getResults();
 
-  void correct_total(int index);
+  std::map<QString, float> getResultsInfo();
+
+ private:
+  std::map<SIR_types::type, float> getArgs(int index);
+
+  void correctTotal(int index);
 
   // Object from R4 method for calculations
   R4Method* r4_calculator;

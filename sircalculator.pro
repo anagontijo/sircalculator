@@ -18,6 +18,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+RC_ICONS = src/SIR_icon.ico
+
 # Input
 HEADERS += src/r4_method.h src/sir_interface.h src/sir_method.h \
     src/mainwindow.h \
@@ -35,3 +37,6 @@ SOURCES += src/main.cpp \
     src/mainwindow.cpp \
     src/sir_menu.cpp \
     src/sir_plot.cpp
+
+RESOURCES += \
+    src/icons.qrc

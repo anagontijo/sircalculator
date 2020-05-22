@@ -2,26 +2,24 @@
 #define SIR_INTERFACE_H
 
 #include <QWidget>
-#include "sir_menu.h"
-#include "sir_plot.h"
-#include "sir_method.h"
 #include <memory>
+#include "sir_menu.h"
+#include "sir_method.h"
+#include "sir_plot.h"
+#include "ui_sir_interface.h"
 
-namespace Ui {
-class SIRInterface;
-}
+class SIRInterface : public QWidget, Ui::SIRInterface {
+  Q_OBJECT
 
-class SIRInterface : public QWidget
-{
-    Q_OBJECT
+ public:
+  explicit SIRInterface(QWidget* parent = 0);
+  ~SIRInterface() = default;
 
-public:
-    explicit SIRInterface(QWidget* parent = 0);
-    ~SIRInterface();
+ public slots:
+  void prepareCalculation();
 
-private:
-
-    Ui::SIRInterface *ui;
+ private:
+  SIRMethod* method;
 };
 
-#endif // SIR_INTERFACE_H
+#endif  // SIR_INTERFACE_H

@@ -2,22 +2,14 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "ui_mainwindow.h"
 
+class MainWindow : public QMainWindow, public Ui::MainWindow {
+  Q_OBJECT
 
-namespace Ui {
-class MainWindow;
-}
-
-class MainWindow : public QMainWindow
-{
-    Q_OBJECT
-
-public:
-    explicit MainWindow(QWidget *parent = 0);
-    ~MainWindow();
-
-private:
-    Ui::MainWindow *ui;
+ public:
+  explicit MainWindow(QWidget* parent = 0);
+  ~MainWindow() = default;
 };
 
-#endif // MAINWINDOW_H
+#endif  // MAINWINDOW_H

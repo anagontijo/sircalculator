@@ -1,43 +1,56 @@
 #ifndef SIR_MENU_H
 #define SIR_MENU_H
 
-#include <QWidget>
-#include <QSpinBox>
 #include <QSlider>
+#include <QSpinBox>
+#include <QWidget>
 #include "sir_types.h"
+#include "ui_sir_menu.h"
 
-namespace Ui {
-class SIRMenu;
-}
+class SIRMenu : public QWidget, public Ui::SIRMenu {
+  Q_OBJECT
 
-class SIRMenu : public QWidget
-{
-    Q_OBJECT
+ public:
+  explicit SIRMenu(QWidget* parent = 0);
+  ~SIRMenu();
 
-public:
-    explicit SIRMenu(QWidget *parent = 0);
-    ~SIRMenu();
+  std::map<QString, float> getArgs();
 
-private:
-    Ui::SIRMenu *ui;
+  int getTotalPop();
 
-    std::map<SIR_types::time, QSpinBox*> _spinBoxesTime;
+  int getTotalTime();
 
-    std::map<SIR_types::time, QSlider*> _slidersTime;
+  float getIntervalSize();
 
-    std::map<SIR_types::type, QSpinBox*> _spinBoxes;
+  void updateResults(std::map<QString, float> results);
 
-    std::map<SIR_types::type, QSlider*> _sliders;
+ private:
+  Ui::SIRMenu* ui;
 
-    std::map<SIR_types::rate, QSpinBox*> _spinBoxesRates;
+  std::map<SIR_types::time, QSlider*> _slidersTime;
 
-    std::map<SIR_types::rate, QSlider*> _slidersRates;
+  std::map<SIR_types::type, QSpinBox*> _spinBoxes;
 
-    void connectSpinBoxToSlider(SIR_types::types item ,int type, float min, float max, float value);
+  std::map<SIR_types::type, QSlider*> _sliders;
 
-    void update_sliders();
+  std::map<SIR_types::rate, QDoubleSpinBox*> _spinBoxesRates;
 
-    void update_spinBoxes();
+  std::map<SIR_types::rate, QSlider*> _slidersRates;
+
+  void connectSpinBoxToSlider(SIR_types::types item,
+                              int type,
+                              float min,
+                              float max,
+                              float value);
+
+  void updateSliders();
+
+  void updateSpinBoxes();
+
+  void validateSettings();
+
+ signals:
+  void recalculate();
 };
 
-#endif // SIR_MENU_H
+#endif  // SIR_MENU_H
